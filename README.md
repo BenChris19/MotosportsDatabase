@@ -22,28 +22,45 @@ foreign key (hoFBestRaceName,hoFBestRaceDate) references
 MoSpo Race(raceName,raceDate)
 Your code must execute without error, assuming that all other tables
 have been set up by running scripts a2-setup.sql and a2-setup-additional.sql.
-[10 marks]
+
+
 The data types you choose for the columns should be most appropri-
 ate for the data they will contain. You must also accommodate the
 following requirements:
+
+
 (a) For table and column names you must pick exactly the names
 used in the schema above (otherwise you will lose marks as tests
 will fail).
+
+
 (b) hoFYear is a 4-digit number representing a year between 1901
 and 2155 (or 0000).
+
+
 (c) hoFSeries is one of the following strings: BritishGT, Formula1,
 FormulaE, SuperGT. Please make sure you use the correct spelling.
 These column values, when ordered, should always appear in the
 order they have been listed above. Values for this attribute must
 not be missing.
+
+
 (d) hoFWins is a positive integer number and never larger than 99.
 The default is 0 but values can be missing.
+
+
 (e) hoFImage is a path to an image document which is a string never
 longer than 200 characters. This value can be missing.
+
+
 (f) Equip any foreign key constraints with constraint names of your
 choosing.
+
+
 (g) Ensure that if a driver is deleted from the database their corre-
 sponding hall of fame entries are deleted automatically too.
+
+
 (h) Ensure that if a race is deleted from the database then foreign key
 values in hall of fame entries that reference it are automatically
 set to null.
