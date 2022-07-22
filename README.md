@@ -2,6 +2,7 @@
 
 
 *Specification*
+
 A race has a name and must take place at a single race course at a         
 specific date and at a specific starting time. A race has a certain number
 of laps (around the race course) and a total length in miles. No two   
@@ -119,14 +120,14 @@ never participated in a race.**
 be the total number of retirements of cars of make m divided by the
 total number of cars of make mtaking part in a race during time t.
 In case no car of make m participated in race r during period t this
-number is undefined (NULL).
-For example, let t be the year 2000 and m = Porsche. Assume that
+number is undefined (NULL).**
+**For example, let t be the year 2000 and m = Porsche. Assume that
 in the year 2000 there were two races with Porsche cars involved. In
 the first race 2 cars of that make raced and 1 had a retirement. In the
 second race 3 cars of that make raced with 0 retirements. Therefore,
-we get that RetirementsRatePorsche(t) = 1/5 = 0.2.
+we get that RetirementsRatePorsche(t) = 1/5 = 0.2.**
 
-For a period t, let AverageRetirementRate(t) be the average of re-
+**For a period t, let AverageRetirementRate(t) be the average of re-
 tirement rates for period t across all makes m, i.e. the average of
 RetirementsRate(t) ignoring undefined values, over all makes m.
 List for each car make mthe retirement rate RetirementRatem(t) where
@@ -140,18 +141,18 @@ time for the car specified by the racing number in the given race. If
 the given race does not exist, the routine should throw the error with
 message procedure Race does not exist. If the specified racing num-
 ber did not take part in the existing race, the routine should throw an
-error with message procedure RaceEntry does not exist.
-In the case that not all required lap times for the (existing) car in the
+error with message procedure RaceEntry does not exist.**
+**In the case that not all required lap times for the (existing) car in the
 (existing) race are available either until race finish or retirement, the
 routine should throw an error with message procedure TimeForAll-
-Laps does not exist.
-If the (existing) race was not completed by the (participating) car in
+Laps does not exist.**
+**If the (existing) race was not completed by the (participating) car in
 the race due to retirement but all lap times were available until retire-
 ment, the routine must not throw an error but return null.
 Note that in those error cases the function must not return a string but
-produce an SQL error.
+produce an SQL error.**
 
-The total race time should be returned as an integer denoting millisec-
+**The total race time should be returned as an integer denoting millisec-
 onds. Note that this stored routine has three arguments and you must
 declare them in the order given above.**
 
