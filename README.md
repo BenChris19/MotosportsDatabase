@@ -13,6 +13,7 @@ Important aspects of a racing team are its name and the address of the team’s 
 
 **1. Write one SQL statement to set up table MoSpo HallOfFame accord-
 ing to the following Relational Schema:**
+
 MoSpo HallOfFame(hoFdriverId, hoFYear, hoFSeries, hoFImage,
 hoFWins, hoFBestRaceName, hoFBestRaceDate)
 primary key (hoFdriverId,hoFYear)
