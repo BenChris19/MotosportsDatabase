@@ -2,37 +2,38 @@
 
 
 *Specification*
------------------------------------------------------------------------------
-|A race has a name and must take place at a single race course at a         |
-|specific date and at a specific starting time. A race has a certain num-   |
-|ber of laps (around the race course) and a total length in miles. No two   |
-|races of the same name take place on the same day.                         |
-|A race course has a unique name, a location, and a length in miles.        |
-|For each driver, we keep the name, consisting of first and last name,      |
-|nationality, date of birth and a unique driver identifier. Drivers always  |
-|belong to a single racing team. We need to find out which driver drove     |
-|which car in which race. We also need to store in which place they ar-     |
-|rived at the finish (non-finishers are recorded as arrived in 0-th place). |
-|Drivers drive at most one car in a race but not all drivers do. There are  |
-|no driver swaps during a race but at different races different drivers may |
-|be driving the same car. The type of tyres on the car at the start of the  |
-|race is recorded as well as the car’s racing number for that particular    |
-|race.                                                                      |
-|Cars have a unique identifier and must belong to a racing team. The        |
-|make of the engine of a car is relevant too. Not every car is necessarily  |
-|driven in a race.                                                          |
-|A car may complete a lap of a race in which case the lap time and fuel     |
-|consumption are to be recorded. A car may have a pit stop during a         | 
-|lap in a race, in which case the duration of the pit stop and the items    |
-|that have been changed during the pit stop (tyres, front nose, etc.) are   | 
-|recorded. A car may retire in a lap of a race, in which case the reason    |
-|for the retirement is to be recorded. In all these cases, we need to know  |
-|vin which lap of which race this occurred.                                 |
-|Important aspects of a racing team are its name and the address of the     |
-|team’s headquarter consisting of postcode, street name, house num-         |
-|ber. Racing teams may be entered on the database before any drivers        |
-|or cars are assigned to them.                                              |
------------------------------------------------------------------------------
+A race has a name and must take place at a single race course at a         
+specific date and at a specific starting time. A race has a certain number
+of laps (around the race course) and a total length in miles. No two   
+races of the same name take place on the same day.                         
+A race course has a unique name, a location, and a length in miles.        
+For each driver, we keep the name, consisting of first and last name,      
+nationality, date of birth and a unique driver identifier. Drivers always  
+belong to a single racing team. We need to find out which driver drove     
+which car in which race. We also need to store in which place they arrived
+at the finish (non-finishers are recorded as arrived in 0-th place). 
+Drivers drive at most one car in a race but not all drivers do. There are  
+no driver swaps during a race but at different races different drivers may 
+be driving the same car. The type of tyres on the car at the start of the  
+race is recorded as well as the car’s racing number for that particular    
+race.                                                                      
+Cars have a unique identifier and must belong to a racing team. The        
+make of the engine of a car is relevant too. Not every car is necessarily  
+driven in a race.                                                          
+A car may complete a lap of a race in which case the lap time and fuel     
+consumption are to be recorded. A car may have a pit stop during a         
+lap in a race, in which case the duration of the pit stop and the items    
+that have been changed during the pit stop (tyres, front nose, etc.) are   
+recorded. A car may retire in a lap of a race, in which case the reason    
+for the retirement is to be recorded. In all these cases, we need to know 
+vin which lap of which race this occurred.                                
+Important aspects of a racing team are its name and the address of the    
+team’s headquarter consisting of postcode, street name, house number.
+Racing teams may be entered on the database before any drivers       
+or cars are assigned to them.                                             
+
+
+*Questions*
 
 **1. Write one SQL statement to set up table MoSpo HallOfFame accord-
 ing to the following Relational Schema:**
